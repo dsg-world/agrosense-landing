@@ -61,15 +61,15 @@
         <div class="phone-shell">
           <div class="phone-notch"></div>
           <div class="app-topbar">
-            <span class="dot"></span>
+            <span class="app-logo">
+              <img src="assets/agrosense-logo.png" alt="" />
+            </span>
             <strong>AgroSense Scan</strong>
             <small>Live preview</small>
           </div>
           <div class="crop-preview">
-            <span class="scan-line"></span>
-            <span class="leaf-shape leaf-one"></span>
-            <span class="leaf-shape leaf-two"></span>
-            <span class="leaf-shape leaf-three"></span>
+            <img class="crop-preview-bg" src="assets/agrosense-crop-preview.jpg" alt="" aria-hidden="true" />
+            <img src="assets/agrosense-crop-preview.jpg" alt="AgroSense AI crop disease detection preview" />
           </div>
           <div class="insight-card danger">
             <span>Disease detection</span>
@@ -188,7 +188,7 @@
           Selected plan
           <select name="selected_plan" id="selected-plan-field" required>
             <option value="">Choose a plan or click one below</option>
-            <option value="Basic — $2/month">Basic — $2/month</option>
+            <option value="Basic — $3/month">Basic — $3/month</option>
             <option value="Premium — $15/month">Premium — $15/month</option>
             <option value="Enterprise — Contact Us">Enterprise — Contact Us</option>
           </select>
@@ -227,7 +227,7 @@
       <div class="pricing-grid">
         <article class="price-card">
           <h3>Basic</h3>
-          <p class="price"><span>$</span>2<small>/month</small></p>
+          <p class="price"><span>$</span>3<small>/month</small></p>
           <ul>
             <li>Crop disease checks</li>
             <li>Basic AI recommendations</li>
