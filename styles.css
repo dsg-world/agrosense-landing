@@ -36,8 +36,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 body.menu-open { overflow: hidden; }
 
 body::before {
@@ -112,7 +110,6 @@ img, svg { max-width: 100%; }
   object-fit: cover;
   border-radius: 18px;
 }
-
 
 .nav-links {
   display: flex;
@@ -322,8 +319,19 @@ h3 {
   color: var(--ivory);
 }
 
-.app-topbar small { color: rgba(251, 247, 234, .55); font-size: 12px; font-weight: 800; }
-.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 7px rgba(155,232,181,.12); }
+.app-topbar small {
+  color: rgba(251, 247, 234, .55);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 0 7px rgba(155,232,181,.12);
+}
 
 .crop-preview {
   position: relative;
@@ -515,7 +523,11 @@ h3 {
   align-items: start;
 }
 
-.form-copy p { color: rgba(251, 247, 234, .7); font-size: 18px; line-height: 1.72; }
+.form-copy p {
+  color: rgba(251, 247, 234, .7);
+  font-size: 18px;
+  line-height: 1.72;
+}
 
 .whatsapp-panel {
   display: block;
@@ -527,7 +539,16 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
-.whatsapp-panel span { display: block; margin-bottom: 6px; color: var(--gold-soft); font-size: 12px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.whatsapp-panel span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--gold-soft);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
 .whatsapp-panel strong { font-size: 22px; }
 
 .lead-form {
@@ -567,7 +588,14 @@ input:focus, select:focus, textarea:focus {
 }
 
 .full { grid-column: 1 / -1; }
-.form-note { grid-column: 1 / -1; margin: 0; color: rgba(251, 247, 234, .58); font-size: 13px; line-height: 1.5; }
+
+.form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: rgba(251, 247, 234, .58);
+  font-size: 13px;
+  line-height: 1.5;
+}
 
 .survey-card, .cta {
   display: flex;
@@ -582,7 +610,11 @@ input:focus, select:focus, textarea:focus {
   background: linear-gradient(135deg, rgba(217,181,109,.16), rgba(31,143,95,.14));
 }
 
-.survey-card p, .cta p { color: rgba(251, 247, 234, .66); line-height: 1.66; margin-bottom: 0; }
+.survey-card p, .cta p {
+  color: rgba(251, 247, 234, .66);
+  line-height: 1.66;
+  margin-bottom: 0;
+}
 
 .pricing-grid {
   display: grid;
@@ -716,6 +748,7 @@ input:focus, select:focus, textarea:focus {
   }
 
   .nav-links.open { display: flex; }
+
   .nav-links a {
     padding: 14px;
     border-radius: 16px;
@@ -757,8 +790,8 @@ input:focus, select:focus, textarea:focus {
   .section-pad { width: min(100% - 24px, 1200px); padding: 62px 0; }
   .compact { padding: 42px 0; }
   .nav { min-height: 76px; }
-  .brand-mark { width: 48px; height: 48px; border-radius: 15px; }
   .brand { min-width: 0; }
+  .brand-mark { width: 48px; height: 48px; border-radius: 15px; }
   .brand-copy strong { font-size: 15px; }
   .brand-copy small { display: none; }
 
@@ -780,6 +813,7 @@ input:focus, select:focus, textarea:focus {
   }
 
   .hero-text, .form-copy p, .panel-card p:not(.eyebrow) { font-size: 17px; }
+
   .hero-actions,
   .credibility-strip {
     align-items: stretch;
@@ -796,6 +830,7 @@ input:focus, select:focus, textarea:focus {
 
   .lead-form { grid-template-columns: 1fr; padding: 22px; border-radius: 26px; }
   .feature-card, .price-card, .survey-card, .cta, .panel-card { padding: 24px; }
+
   .phone-shell {
     width: min(360px, 100%);
     border-radius: 36px;
@@ -804,7 +839,6 @@ input:focus, select:focus, textarea:focus {
 
   .crop-preview { height: clamp(178px, 58vw, 210px); }
   .stat-grid article { padding: 20px; }
-
   .stat-grid strong { font-size: 34px; }
 
   .price-card {
@@ -851,8 +885,6 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
-
-/* Selected pricing plan: small functional addition, without changing the premium layout */
 .selected-plan-box {
   padding: 18px;
   border: 1px solid rgba(244, 223, 170, .25);
@@ -892,7 +924,6 @@ input:focus, select:focus, textarea:focus {
   outline: 3px solid rgba(155, 232, 181, .22);
 }
 
-/* Fixed WhatsApp actions: two separate always-visible buttons */
 .whatsapp-fixed-actions {
   position: fixed;
   right: 22px;
